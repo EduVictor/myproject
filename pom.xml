@@ -1,73 +1,85 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>br.ufrn.ceres.bsi.pweb</groupId>
-	<artifactId>myproject</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+    <groupId>br.ufrn.ceres.bsi.pweb</groupId>
+    <artifactId>myproject</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
-	<name>MyProject</name>
-	<description>Um exemplo de projeto Maven - PWeb</description>
+    <name>MyProject</name>
+    <description>Um exemplo de projeto Maven - PWeb</description>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
+    <developers>
+        <developer>
+            <email>eduvictornobrega@gmail.com</email>
+            <name>Eduardo Victor Nóbrega Fernandes</name>
+            <url>https://github.com/EduVictor</url>
+            <id>EduVictor</id>
+        </developer>
+    </developers>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.7.1</version>
-				<configuration>
-					<locales>en,pt_BR</locales>
-					<skipDeploy>true</skipDeploy>
-				</configuration>
-			</plugin>
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>3.0.0</version>
-			</plugin>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
 
-			<plugin>
-				<groupId>org.ec4j.maven</groupId>
-				<artifactId>editorconfig-maven-plugin</artifactId>
-				<version>0.0.5</version>
-				<executions>
-					<execution>
-						<id>check</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <locales>en,pt_BR</locales>
+                    <skipDeploy>true</skipDeploy>
+                </configuration>
+            </plugin>
 
-		</plugins>
-		
-		
-		
-	</build>
-	
-	<developers>
-	    <developer>
-	      <email>eduvictornobrega@gmail.com</email>
-	      <name>Eduardo Victor Nóbrega Fernandes</name>
-	      <url>https://github.com/EduVictor</url>
-	      <id>EduVictor</id>
-	    </developer>
-	</developers>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.ec4j.maven</groupId>
+                <artifactId>editorconfig-maven-plugin</artifactId>
+                <version>0.0.5</version>
+                <executions>
+                    <execution>
+                        <id>check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
+
+
+
 
 </project>
 
