@@ -52,7 +52,7 @@ public boolean ehPar(int num){
     }
 }
     
-public boolean ehPrimo(int num) {
+public boolean ehPrimo(int num){
     for (int j = 2; j < num; j++) {
         if (num % j == 0)
             return false;   
@@ -60,8 +60,20 @@ public boolean ehPrimo(int num) {
     return true;
 }
 
-public int [] divisores(int num){
-    
+public int[] divisores(int num){
+    int cont = 0, cont2 = 0; 
+    for(int i = 0; i < num; i++){
+        if(num % i == 0){
+            cont++;
+        }
+    }
+    int div[] = new int[cont];
+    for(int i = 0; i < num; i++){
+        if(num % i == 0){
+            div[cont2] = i;
+        }
+    }
+    return div;
 }
 
 

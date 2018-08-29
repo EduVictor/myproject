@@ -33,6 +33,14 @@
 	    else{
 	        out.println("Esse número não é primo!");
 	    }
+	    
+	    int div[] = divisores(num);
+	    out.println("Divisores: ");
+	    for(int i = 0; i < div.length; i++){
+	        out.println("%d", div[i]);
+	    }
+	    
+	    
 	%>
 
 	<br>E-Mail:
